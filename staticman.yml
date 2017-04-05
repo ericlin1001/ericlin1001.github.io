@@ -4,7 +4,7 @@ comments:
   commitMessage          : "New comment from staticman."
   filename               : comment-{@timestamp}
   format                 : "yaml"
-  moderation             : true
+  moderation             : false 
   path                   : "_data/comments/{options.slug}"
   requiredFields         : ['name',  'message']
   transforms:
