@@ -33,9 +33,9 @@ staticman:
   branch                 : "master"
   commitMessage          : "New comment."
   filename               : comment-{@timestamp}
-  format                 : "yaml"
+  format                 : "yml"
   moderation             : false 
-  path                   : "_data/comments/{options.slug}"
+  path                   : "/_data/comments/{options.slug}"
   requiredFields         : ['name', 'email', 'message']
   transforms:
     email                : "md5"
