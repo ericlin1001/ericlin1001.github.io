@@ -1,0 +1,29 @@
+---
+layout: single
+permalink: /search/
+title: "SearchResults"
+author_profile: true
+---
+
+<div id="results">
+</div>
+<script>
+var JEKYLL_POSTS=[];
+{% for post in site.posts %}
+JEKYLL_POSTS.push({
+title: "{{ post.title }}",
+link: "{{ post.url|prepend: site.baseurl}}",
+content: "{{ post.excerpt |strip_newlines|strip_html}}"
+<!-- content: "{{ post.content|strip_newlines|strip_html}}" -->
+});
+{% endfor %}
+</script>
+
+<script src="{{ "/assets/js/search.js" | prepend: stie.baseurl }}"></script>
+<script>
+new jekyllSearch({
+		selector: "#results",
+		properties: ["title", "content"],
+		noResultsMessage: "Sorry, no results were found!"
+		});
+</script>
