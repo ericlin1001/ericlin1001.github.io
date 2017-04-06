@@ -1,5 +1,6 @@
 ---
 title: "Test markdown syntax"
+layout: "single"
 ---
 
 # unordered_list
