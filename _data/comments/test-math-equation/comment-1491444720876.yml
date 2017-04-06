@@ -1,7 +1,0 @@
-_id: 6b2d5ff0-1a6e-11e7-82b2-1f8592dc6023
-message: <script>alert("xss");</script>
-name: <script>alert("xss2");</script>
-email: ''
-url: ''
-hidden: ''
-date: '2017-04-06T02:12:00.874Z'
