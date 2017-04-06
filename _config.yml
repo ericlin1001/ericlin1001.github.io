@@ -18,7 +18,7 @@ teaser                   :  # path of fallback teaser image, e.g. "/assets/image
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : staticman # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : "staticman" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -35,8 +35,8 @@ staticman:
   filename               : comment-{@timestamp}
   format                 : "yml"
   moderation             : false 
-  path                   : "/_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
+  path                   : "_data/comments/{options.slug}"
+  requiredFields         : ['name', 'email',  'message']
   transforms:
     email                : "md5"
   generatedFields:
