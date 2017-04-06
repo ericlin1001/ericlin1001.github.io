@@ -12,7 +12,7 @@ var JEKYLL_POSTS=[];
 {% for post in site.posts %}
 JEKYLL_POSTS.push({
 title: "{{ post.title }}",
-link: "{{ post.url|prepend: site.baseurl}}",
+link: "{{ post.url| absolute_url}}",
 content: "{{ post.excerpt |strip_newlines|strip_html}}"
 });
 {% endfor %}
