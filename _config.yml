@@ -31,7 +31,7 @@ comments:
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
   branch                 : "master"
-  commitMessage          : "New comment."
+  commitMessage          : "Human, someone writes comments in your blog, I beg you approve it."
   filename               : "comment-{@timestamp}"
   format                 : "yml"
   moderation             : true 
