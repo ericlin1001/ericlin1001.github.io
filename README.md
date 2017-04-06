@@ -20,3 +20,8 @@ Please refer to [https://ericlin1001.github.io](https://ericlin1001.github.io).
 
 # TODO
 * [ ] Orangize my all posts in a easy understanding way.
+
+# BUGs
+* [ ] Search box, will jump to http://xxx, But I want it jump to https://xxx. (Test in my classmate(Guo Li)'s computer, firefox)
+* [ ] Date of comments are incorrect.
+
