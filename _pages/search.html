@@ -14,7 +14,6 @@ JEKYLL_POSTS.push({
 title: "{{ post.title }}",
 link: "{{ post.url|prepend: site.baseurl}}",
 content: "{{ post.excerpt |strip_newlines|strip_html}}"
-<!-- content: "{{ post.content|strip_newlines|strip_html}}" -->
 });
 {% endfor %}
 </script>
