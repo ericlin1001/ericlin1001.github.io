@@ -1,18 +1,15 @@
 ---
 layout: post
-title: "Things Inside Conversion Bewteen Types"
+title: "Things Inside Conversion Between Types in C++"
 description: ""
 category: 
 tags: []
 ---
 
-#Things inside conversion of different types
-What happens when converting variables between different types? (C++)
+One day, I'm curious about what really happens when converting variables to different types in C++? So I write the following program to find the truth. If you're boring with program, jump to the conclusion part.
 
-
-#Program to find the truth
-
-```
+# Program to find the truth
+~~~
 #include<iostream>
 using namespace std;
 
@@ -130,12 +127,11 @@ int main(){
 	testAllType();
 	return 0;
 }
-```
+~~~
 
 
 #The result of program.
-
-```
+~~~
 After run command:b=128
 From Unsigned Byte	b	128	10000000
 ---
@@ -386,14 +382,12 @@ To Unsigned Byte	b	64	01000000
 To Signed Byte		sb	64	01000000
 To Unsigned Double Word	dw	4294967104	11111111111111111111111101000000
 To Signed Double Word	sdw	-192	11111111111111111111111101000000
-
-
-```
+~~~
 
 
 
 
-#Observation
+# Observation from the result of program.
 1. When a signed varialbe Var is converted to a bigger-size variable NewVar, the new expanding high bits are filled with the same bit as the highest bit of Var, i.e. if Var is positive, NewVar is filled with 0, while if Var is negative, NewVar is filled with 1.
 
 2. When a unsigned variable is converted to a bigger-size variable, the expanding bits are filled with 0.
@@ -401,6 +395,6 @@ To Signed Double Word	sdw	-192	11111111111111111111111101000000
 3. When a variable is converted to a less-size variable, cut the high bits directly.
 
 
-#Conclusion
+# Conclusion
 In a nutshell, to expand a Var to a bigger size, fill with 0 if Var is a unsigned or Var is postive, otherwise 1.
 

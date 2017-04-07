@@ -1,17 +1,15 @@
 ---
 layout: post
-title: "SharingTerminal"
+title: "Collaborating by sharing screen or terminal"
 description: ""
 category: 
 tags: []
 ---
-{% include JB/setup %}
 
 # [tmate](http://tmate.io)
----
+Tmate is an instant terminal sharing application.
 
-### How to use it?
-
+## How to use it?
 1. run `tmate`
 2. run `tmate show-messages`
 3. get the web url from the result of last command
@@ -21,11 +19,11 @@ tags: []
 ---
 [About how to remote working together on a terminal session in linux](http://technonstop.com/screen-commands-for-terminal-sharing).
 
-### Teacher side
+## Teacher side
 
 `screen -d -R hello`
 
-### Students side
+## Students side
 
 `screen -x hello`
 

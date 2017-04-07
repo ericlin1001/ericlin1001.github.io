@@ -1,16 +1,17 @@
 ---
 layout: post
-title: "Putty_Auto_connect"
+title: "How to setup putty to auto connect to your computer"
 description: ""
 category: 
 tags: []
 ---
-{% include JB/setup %}
 
-# How to make putty(windows) auto connect to your computer(linux)
-
+# How to make putty(in Win7) auto connect to your computer(Linux)?
+Let say, we have a windows computer A, and a linux computer B.
+And We want use putty to auto connect B, from A.  
+There's steps:
 1. Use [puttygen.exe](http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) to generate a public key and private key.
-2. Save the public key in linux(~/.ssh/authorized_keys)
+2. Save the public key inside linux(~/.ssh/authorized_keys)
 3. Inside Putty
 	1. In *Connection->Auth->Private key file for authentication*, select the private key you saved.
 	2. In *Connection Data*, set *the Auto-login username* as the linux's username.

@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "Windows_How_to_restart_a_program"
+title: "How to onekey to restart a program in Windows"
 description: ""
 category: 
 tags: []
 ---
-{% include JB/setup %}
 
+Sometimes, I need to restart a program frequently. So I write this script, to easily quckly restart a program.
+Here are steps:
 1. Save following code as **restart.bat**.
 ```
 taskkill /F /IM  [process's name]
