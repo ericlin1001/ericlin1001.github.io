@@ -3,7 +3,6 @@ layout: post
 title: "STL container notes"
 ---
 
-
 # Sequence container:
 ## array
 Just like int a[], it's a simple wrapper of [];
