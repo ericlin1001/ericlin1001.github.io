@@ -6,5 +6,5 @@ category:
 tags: []
 ---
 
-[EncodingProblem](https://github.com/ericlin1001/EncodingProblem)
+Please refer to: [EncodingProblem](https://github.com/ericlin1001/EncodingProblem)
 

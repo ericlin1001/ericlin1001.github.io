@@ -1,56 +1,68 @@
 ---
 layout: post
-title: "STL container notes"
+title: "STL container"
 ---
 
 # Sequence container:
-## array
-Just like int a[], it's a simple wrapper of [];
+1. array  
+Just like int a[], it's a simple wrapper.
 
-## vector
-### Modifier
-push_back(),pop_back();
-### Accesser
-operator[],front(),back()
+2. vector
+	* front()
+	* back()
+	* operator[]
+	* push_back()
+	* pop_back();
 
-## deque
-push_back(),pop_back();
+3. deque
+	* front()
+	* back()
+	* operator[]
+	* push_front()
+	* push_back()
+	* pop_front();
+	* pop_back();
 
-## set
-insert(), find(), erase();
+4. set
+	* insert()
+	* find()
+	* erase();
 
 # Non-sequence container:
 
-## list
-push_back(),pop_back();
+1. list
+Doubly-linked lists.
+	* front()
+	* back()
+	* push_front()
+	* push_back()
+	* pop_front();
+	* pop_back();
 
 
-## map
-### Modifier
-opertor[],insert(pair())
-### Accesser
-operator[],find()
+2. map
+	* opertor[]
+	* insert(pair())
+	* operator[]
+	* find()
 
 # Adaptor
 
-## stack
-### Modifier
-pop(), push();
-### Accesser
-top()
+1. stack
+	* top()
+	* push();
+	* pop()
 
-## priority_queue -> vector
-### Modifier
-pop(), push();
-### Accesser
-top()
+2. priority_queue(underlying containter: vector)
+	* top()
+	* push();
+	* pop()
 
 
-## queue -> deque
-### Modifier
-push(),pop();
-### Accesser
-front(),back();
+3. queue (underlying containter: deque)
+	* front()
+	* back();
+	* push()
+	* pop();
 
 
-# Author: Eric Lin

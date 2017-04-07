@@ -1,54 +1,51 @@
 ---
 layout: post
-title: "use Trash instead of Rm"
+title: "Linux: Use `trash` instead of `rm`"
 description: ""
 category: 
-tags: []
+tags: ["Linux"]
 ---
-{% include JB/setup %}
 
-# Why use trash instead of rm ?
+# Why use `trash` instead of `rm` ?
+If you wrongly `rm` sth, it can't recovered.
 
-	If you wrongly rm sth, it can't recovered.
-	While if you just move sth trash, it can be found if you delete accidently.
+While if you just move sth to trash, it could be recovered.
 
-# How to use trash?
+# Use `trash` in your Linux
+1. Install trash command.  
+	In Ubuntu 14.04, run: `sudo apt-get install trash`
 
-1. Install trash command.
+2. Add following lines into ~/.bashrc.  
+~~~~
+alias trash="trash"
+alias th="trash"
+alias del="trash"
+alias rm="echo Use 'del' to move to trash, or the full path i.e. '/bin/rm'"
+alias trash-restore="restore-trash" # since trash-restore is easy to use than original restore-trash.
+~~~~
 
-	`sudo apt-get install trash`
+3. Let it take effect, run:	`source .bashrc`
 
-2. Add following lines into ~/.bashrc.
+# Examples
+1. To delete sth
+~~~
+touch foo
+del foo
+~~~
+or 
+~~~
+touch foo
+th foo
+~~~
 
-	```
-	alias trash="trash"
-	alias del="trash"
-	alias rm="echo Use 'del' to move to trash, or the full path i.e. '/bin/rm'"
-	```
-
-3. Let it take effect.
-
-	`source .bashrc`
-
-# Practice
-1. How to delete sth?
-
-	```
-	touch foo
-	del foo
-	```
-
-2. How to undelete sth?
-
-	1. Find the file name that you want to restore.
-
-		`trash-list`
+2. View all deleted files: `trash-list`
+3. How to restore?
+	1. First way:
+       run `trash-restore`, and input index of file you want to restore.
 	
-	2. Go to /home/$username/.local/share/Trash/files and save your file.
+	2. Second way:
+	   Go to */home/$username/.local/share/Trash/files* and save your file.
 		
-# Notice
-
-Never use rm, until you correctly know what it does.
 
 
 
