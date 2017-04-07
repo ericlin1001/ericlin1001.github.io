@@ -137,6 +137,7 @@ exclude:
   - Rakefile
   - README
   - README.md
+  - makefile
   - readme.md
   - tmp
   - /docs # ignore Minimal Mistakes /docs
