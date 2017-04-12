@@ -17,11 +17,12 @@ A JavaScript display engine for mathematics.
 # Finished
 * [x] Add support for comments.
 * [x] Add support for math expressions.
+* [x] Orangize my all posts in a easy understanding way.
 
 # TODO
-* [ ] Orangize my all posts in a easy understanding way.
+* [ ] Fix bugs
 
-# BUGs
+# Found BUGs
 * [ ] Search box, will jump to http://xxx, But I want it jump to https://xxx. (Test in my classmate(Guo Li)'s computer, firefox)
 * [ ] Date of comments are incorrect.
 
