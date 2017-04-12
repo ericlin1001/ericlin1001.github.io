@@ -3,7 +3,9 @@ layout: post
 title: "Useful Tools I Use"
 ---
 
-
+# [k2pdfopt](http://www.willus.com/k2pdfopt/)
+A tool, transforms pdf files to easy-read pdf in mobile device.
+K2pdfopt optimizes PDF/DJVU files for mobile e-readers (e.g. the Kindle) and smartphones. It works well on multi-column PDF/DJVU files and can re-flow text even on scanned PDF files. It can also be used as a general PDF copying/cropping/re-sizing/OCR-ing manipulation tool. 
 # [Aspell](http://aspell.net/)
 GNU Aspell is a Free and Open Source spell checker.
 
